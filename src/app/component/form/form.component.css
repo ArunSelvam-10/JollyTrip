@@ -1,0 +1,58 @@
+.container {
+    padding: 40px 0 0px;
+    width: 45%;
+    font-weight: 500;
+}
+
+body {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1032%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M182.8884800606906 577.1180904920514L285.1973515664734 522.7194985697843 230.79875964420637 420.4106270640015 128.48988813842357 474.80921898626855z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1342.983114928891-28.197040928134072L1246.0609921108683 62.184300780159404 1433.3644566371845 68.72508188988864z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M45.173%2c412.176C69.388%2c413.15%2c90.038%2c395.321%2c101.067%2c373.741C111.153%2c354.005%2c107.861%2c330.866%2c96.431%2c311.877C85.395%2c293.542%2c66.573%2c280.869%2c45.173%2c280.883C23.795%2c280.897%2c4.306%2c293.198%2c-5.972%2c311.943C-15.874%2c330.002%2c-12.799%2c351.19%2c-3.438%2c369.536C7.062%2c390.113%2c22.091%2c411.247%2c45.173%2c412.176' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M965.59 63.44 a108.89 108.89 0 1 0 217.78 0 a108.89 108.89 0 1 0 -217.78 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M604.643%2c546.105C647.751%2c545.098%2c683.886%2c518.103%2c706.532%2c481.409C730.6%2c442.411%2c744.7%2c394.611%2c723.073%2c354.208C700.444%2c311.935%2c652.582%2c290.1%2c604.643%2c291.067C558.362%2c292%2c516.997%2c318.532%2c494.205%2c358.822C471.768%2c398.485%2c471.013%2c447.118%2c494.16%2c486.371C516.952%2c525.022%2c559.784%2c547.153%2c604.643%2c546.105' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1032'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+    height: 100vh;
+    padding-bottom: 3px;
+    background-repeat: no-repeat;
+    background-size: cover;   
+    opacity: 0.9;
+    /* overflow-y: hidden; */
+}
+
+h3 {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 700;
+    color: white;
+}
+
+p {
+    font-size: 2em;
+    font-weight: 500;
+    color: white;
+}
+
+.button {
+    display: flex;
+    justify-content:space-around;
+
+}
+
+.button button{
+    background-color: rgb(255, 255, 255);
+    border-style:none;
+    width:100px;
+    height:35px;
+    font-weight: 500;
+
+}
+
+.button button:hover{
+    background-color: rgba(32, 85, 146, 0.932);
+}
+
+
+#save{
+    background-color:white;
+    width:180px;
+}
+
+#save:hover{
+    background-color:rgb(48, 163, 48);
+}
+

@@ -1,0 +1,66 @@
+<app-navbar></app-navbar>
+<body>
+    <div class="image">
+        <img  routerLink="/form2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEhklEQVR4nO1Ya0hsVRT+xjdpiiG+UxEaNQmvIGik+IhUEA3UCQSjRFEpgwoUFcJ7UUGlMrUfaij+EMGwxEcY+ADviEgqkWhKab4nosePblR0qxX7cPaw58w5Mjqj14n5YDGPs/de37f32muvfQAXXHDhNuIxAO8C2AHwM4BzAIsAXsYthweAjwA8BEAa9hOAMNxCvAPgD040Li6OWlpaaGxsjPr7+6miooKCgoK4iG8cNVuvAeiWP9myXwWvAPiFE4+MjKS+vj46Ozsjk8lkYaurq1zAv/aS7wDwp2Jp2aAnAPoB6G0Y43m5vdQ/MDBQmvGjoyMr4twmJydFf1fGp3yQ8PBwKiwsJL1erxarvwL4HECxov/TAL7i7Xx8fKiuro729vY0iW9vb1NVVRV5eno6ZAVmuHM26Pn5ueRkbW2N2tvbKSsri7y8vJRiHsoZZUt2Tm5ublRWVkabm5uaxA8ODqixsZH8/PyU431vj4A+cbCSkhI6OTmxcjw+Pk6VlZUUGhpqtToZGRm0sLCgSZzFf09PD4WEhGhlonZ7BOQD+FscsKCggI6Pj62IMBHx8fHmdsnJyTQxMaFJ3CT3SUhI0CL+D4APAXjCThSJKY9ZZmYm7e/vSyRmZmYoNTXV/Cw2NpYGBgbM4aZms7OzlJaWpkWc2TyAO7aQewuACcBfAH6TN+KTKu1ekJ+bnSQmJkp7gP8ODg6mjo4OqxATbXl5mfLz8y8i/gWALFuIvwjgR41B2Ma7D+ApRZ9nxRzOjW26+vp684poWVtbG7m7u2sR/xbASwB0NsUEzw6+vr7U0NBAi4uLNDIyQunp6Uoha3IqZIgGsMufe3h4SCfm1tbWhcS5xcTEqBH/AcDrV4lzaQBvb28aHR21cDQ9PU05OTlKR99x0TqdjoqKiqST0hbizNbX15XjPQBwD8DjuCLMBRQ7MIaHh62cstRXWloq5XDeNiUlhaampmwmzq27u1skzwq4UNiJ98QZYSKGhoZUnbPwqq2ttVqpy5jBYOC+fgfgDgeAbZYPRBEspln6uyy5+fl5ys7OJn9/fzIajaptwsLCuJ8lR5AXRbwvimDh0tvbaxPxjY0NKi8vtwixrq4uq3YrKyti+LyJa0DrZUTs7OxQTU2NWg1E1dXVVu07OzvFNs/gmnBPKaK5udmiTmc1D/uPhYrWQcSyl1IAy1hCxarDNeKuklBERAQVFxdTbm6uWpXIjd0Vvmbfo6OjLcizckK4WX2GG0DDBce8WrH1MYBYAAb2HztpDw8PzQKWlpbE9rW4IdTzQ+sCmwOQJPRJ4M9Y2uUCWltbxT563CBYrbSvQnxVvh4q4SWvCA0ODpoF5OXl8X7sdckjwR05PAzyLF8ERlKqrRj509NTCggI4AI+gRPgS35rYwLm5ubElXsVToBRRjYpKUkS0NTUJApgleytxxv8frC7uyvej9mFySnwHJ/xqKgoZfXpFHhCI+UWwonwQEF+01Hl803hvkB+D0AUnAxvy6/E79rxAtgFF1ywEcZL1P6Pyoz/awEuuOACnAv/AfgQgXd2oSAJAAAAAElFTkSuQmCC">
+        <img routerLink="/trainBooking" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD6klEQVR4nO2a30sUURTHvxvlrxDXcF1BX3wJijV60Sd90X5B+OBCUK76VA8rqIX5IKiwf8DiQkn1YLAUakGiEEjtIpVGsf4gf5KQ6+48VRBRL4VlN850rw2zrrBzx1mXOnBguTP3e85n5tyzs3MXMG6HAFwBMAXgKwCWotOcFwAuAzgIi80B4KWBpJP5NNe0zGZ54A0AFwEU8PEpPl63w5w6fozOIbMDuAQgxsdnLMxfTYICOnXjt3ky7TvMaefH6BytObkWlVPaLVmSZHd2gds3dkpXJlqb3qW8LLczAO7ztfAOwHveVTY1C/NXks+b/Fya845rkNZpKxK/AOCTid2H6Zy03XuV/A0RKD8/n7ndbtbd3c38fj8bHBxko6OjbHJyks3MzLClpSW2urrKFEVRnT7TGB2jc+hcmuP3+1WNhoYGVVMDEjA7+W4h3tLSwlZWVraTM8uXl5eZx+PRQlw3K/kiAD9JtKOjw/TEFZ23tbUJgB8AjpgBcI8EKyoqWCwW23OAjY0N5nK5BETQDICPJBYIBPY8eYV7f3+/APhgBoDaAiORiGUAkUhE236l7AQJFRQUWJa8wt1utwsIlwwAdQJWVVVlOUBlZaUA6JQBeEQiTU1NlgN4/rbUhzIAKyTi8/ksB/D5fAJgWQbgC4mMjIxYDjA8PCwAPkt3oLm5OcsBZmdnBcBWxnUgJbETHc+oDqQkdqKrhjsQdYN0ATQ2NgqABxnVgZTETrRkuANRN0gXwNDQkFQn0v4MTLdvGQFg+8xTNnViuspH4f4fQPkX78D6+jrzer2suLiYOZ1O9TONZQyA1+tNWIQ0lhaAeDyeclC68noAh8ORsk48HpcHoBdSqQamstEDlJSUpKyzsLAgDzA+Pm5KCbW2tqasMzY2JgXwnSZ2dXUZXsR0J2QWcWdnp0j+mxEA2n1hZWVl6ssmIwtQxqPRKCstLRUAUSMAt8Tt6+vrsxygt7dXWz4DRgDOCoGcnBwWDoctSz4cDqsxNQC0H5Gy2QC83QcPcas8F0N2bh8AnIek3dUKZmVlsYmJCfVWV1dXSydYU1OjaoVCIZadna0/TrGl7TCANf2Cpp0Wm81mylUOhUI7Ldw1HlvaqP4ei6slHi2am5tFoJsS2gNi14c0Sbu2tlboPpWpfa1dI8HCwkL1ZZPYDsrLy2P8Z+cxCe2jpJGbm8sWFxdV7fn5eVZUVCT1OkVrLv4tqG7KiTbX09MjAjyRDYA/V1otH6EfDAZFedLTwEkZ8QXtLRZeXl4uAOpNAKgnLdLUxqCYPMYbGXH6R8orALm6cdqJfwbggFzuqpHG8x3+K0ExXyfZ9d+233j5G8G6YtZSAAAAAElFTkSuQmCC">
+        <img routerLink="/busBooking" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACTklEQVR4nO2YPYsaQRjH/7lkIb50Kr40+h1SrtokRY6An+BKG+WuEEuL5BMccqTUgBLYIloF0igsVn6A1C44l3RHuOMgZZ4wyyyMQW/f3LjnzR+ewt2Z//P8nJfdHUBJScmrXgB4BeAMQBfAJYDPAEwA3wGsRNwA+AXgHgCJuBfXbqR2vI8pPC6F55nI8Rx71AmACwA/pYKijh8AzkXuUHoJ4JtjXKlUqNFoULPZpF6vR/1+nwzDoFwu57tI3scwDNuDe3FP7l0ul+V2X0UNgTXiRtlslobDITHGtsZoNKJisei5+FKpROPxeKvXer2mwWBAmUzGaf8paPF1bpBMJmk+n+8sPqqYzWaUSCQcCD0IwJR37na7/714JqLT6TgAX4IA3PHOi8XiYACmaToAt0EA/vDOlmUdDMCyLAeA1+JbdudDFc9ESIvfs96JfThuANcATr0A8IYUQwACwDxPnZgCkAJgagRY5FPo+rEv4lMZIkYADMBbLwAbu1GMAHzrOAAQn/Ct4wBgj30KMQXA4jMCy+WSdF23v5Or1ar9O+wILV089wrAE8kLq1arhQbQXTz3CpBKpTaSaZoWGkDTtA3PdDodHQAf4n+3N/l+Pp933Q4LhcKuAinyEeDzkyeQ/zX5fqvVcgVot9tbC9Q0jer1erRrwC1Wq5UNsW0k+DV+j7dRz4En9SCbTqcHK34ymaiXOYrBWyiFmkIxCt86WoD3iE4f9gmwcbwixWtEpzc7cno6TnnweAXAbwBXAJ4hOp0A+ChyBT5OUVJ6SvoLC7O4Hgtsd3MAAAAASUVORK5CYII=">
+    </div>
+    <div class="container">
+        <h3>Book Your Trip</h3>
+        <p>Bus Booking</p>
+
+        <form action="">
+            <div class="form-floating mb-3">
+                <input type="Name" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Passanger Name</label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                  <option value="1">Male</option>
+                  <option value="2">Female</option>
+                  <option value="3">Transgender</option>
+                </select>
+                <label for="floatingSelect">Gender</label>
+              </div>
+
+            <div class="form-floating mb-3">
+                <input type="date" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput"> Date</label>
+            </div>
+
+            <div class="col">
+                <div class="form-floating mb-3">
+                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                      <option value="1">TamilNadu</option>
+                      <option value="2">Kerala</option>
+                      <option value="3">Karnataka</option>
+                      <option value="4">Andhra</option>
+                      <option value="5">Maharastra</option>
+                      <option value="6">Goa</option>
+                    </select>
+                    <label for="floatingSelect">Onboard</label>
+                  </div>
+            </div>
+
+            <div class="col">
+                <div class="form-floating mb-3">
+                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                        <option value="1">TamilNadu</option>
+                        <option value="2">Kerala</option>
+                        <option value="3">Karnataka</option>
+                        <option value="4">Andhra</option>
+                        <option value="5">Maharastra</option>
+                        <option value="6">Goa</option>
+                    </select>
+                    <label for="floatingSelect">Drop</label>
+                </div>
+            </div>
+
+            <div class="button">
+                <button class="btn btn-info" routerLink="/form3"> Book</button>
+            </div>
+
+        </form>
+    </div>
+</body>

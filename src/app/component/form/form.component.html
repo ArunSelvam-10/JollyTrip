@@ -1,0 +1,59 @@
+<body>  
+<app-navbar></app-navbar>
+<div class="container">
+    <h3>Book Your Trip</h3>
+    <p>About You</p>
+
+    <form  [formGroup]="myForm">
+    <div class="row">
+        <div class="col">
+            <div class="form-floating mb-3">
+                <select class="form-select" id="floatingSelect" formControlName="title"  aria-label="Floating label select example">
+                    <option value="1">Mr</option>
+                    <option value="2">Ms</option>
+                    <option value="3">Mrs</option>
+                  </select>
+                <label for="floatingInput">Mr/Mrs</label>
+              </div> 
+        </div>
+    </div>    
+    <div class="row">
+        <div class="col">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput"formControlName="firstname" placeholder="First Name">
+                <label for="floatingInput">First Name</label>
+              </div> 
+        </div>
+        <div class="col">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" formControlName="lastname" placeholder="Last Name">
+                <label for="floatingInput">Last Name</label>
+              </div> 
+        </div>
+    </div>
+
+    <div class="form-floating mb-3">
+        <input type="tel" class="form-control" id="floatingInput" formControlName="contact" placeholder="Contact">
+        <label for="floatingInput">Contact</label>
+    </div> 
+    <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingInput" formControlName="email" placeholder="email">
+        <label for="floatingInput">Email</label>
+    </div> 
+    <div class="form-floating mb-3">
+        <input type="tel" class="form-control" id="floatingInput" formControlName="aadhar" placeholder="Aadhar">
+        <label for="floatingInput">Aadhar</label>
+    </div>  
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="floatingInput" formControlName="city" placeholder="City">
+        <label for="floatingInput">City</label>
+    </div>     
+    <div class="button">    
+        <button class="btn btn-info" routerLink="/lobby">Previous</button>    
+        <button class="btn btn-info" id="save" (click)="savedata()">Save</button>
+        <button class="btn btn-info"  routerLink="/form2" >Next</button>
+    </div>
+
+    </form>
+</div>
+</body>

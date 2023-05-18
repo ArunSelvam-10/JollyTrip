@@ -1,0 +1,53 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+.background{
+    display:flex;
+    justify-content: right;
+    padding: 100px 100px ; 
+    background-image: url(../../../assets/image/signup1.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    filter: brightness(0.8);
+}
+.header{
+    font-size:35px;
+    text-align: center;
+
+}
+.container{
+    height: fit-content;
+    width: 550px;
+    padding: 25px 25px;
+    background-color:transparent;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    backdrop-filter: blur(6px);
+    border-radius: 15px;
+    box-shadow: 5px 0px 20px rgba(46, 46, 46, 0.411), -5px 0px 20px rgba(46, 46, 46, 0.411);     
+    color: black;
+    filter: brightness(1.5);
+}
+button {
+font-size: 20px;
+width:35%;
+margin-left: 180px;
+background-color: rgb(55, 123, 201);
+}
+.signup{
+    margin-left: 20px;
+    padding-top: 10px;
+}
+form input{
+    height:35px;
+    background-color: transparent;
+    border-style: none;
+    border-bottom: 3px solid black;
+    outline: none;
+}
+#username:focus{
+    outline: none;
+}

@@ -1,0 +1,38 @@
+nav{
+    width:100%;
+    height:45px;
+    position: fixed;
+    background-image: linear-gradient( rgb(56, 112, 145),rgb(31, 31, 31, 0.7));
+    z-index: 2;
+  }
+  nav ul a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: x-large;
+  margin-left: 10px;
+  padding:10px;
+  transition: 0.3s;
+  
+  }
+  nav ul a:hover{
+    background-color: rgb(123, 164, 184);
+    transition: 0.3s;  
+  }
+  nav button{
+    display: flex;
+    position:absolute;
+   left:90%;
+   top:5px;
+   height:35px;
+   width:80px;
+   font-size: x-large;
+   background-color: rgb(43, 147, 199);
+  justify-content: center;
+  align-items: center;
+   border: none;
+  }
+  nav button:hover{
+    background-color: rgb(123, 164, 184);
+  
+  
+  }

@@ -1,0 +1,53 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+.background{
+    display:flex;
+    justify-content: center;
+    padding-top: 180px;
+    background-image: url(../../../assets/image/login1.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.header{
+    font-size:35px;
+    text-align: center;
+
+}
+.container{
+    height: fit-content;
+    width: 350px;
+    padding: 25px 25px;
+    background-color:transparent;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 5px 0px 20px rgba(46, 46, 46, 0.411), -5px 0px 20px rgba(46, 46, 46, 0.411);     
+    color: black;
+}
+button {
+font-size: 20px;
+width:35%;
+margin-left: 100px;
+background-color: rgb(55, 123, 201);
+}
+.signup{
+    margin-left: 20px;
+    padding-top: 10px;
+}
+form input{
+    height:35px;
+    background-color: transparent;
+    border-style: none;
+    border-bottom: 3px solid black;
+    outline: transparent;
+    
+}
+form input:focus{
+    outline: transparent;
+    border: 5px;
+}

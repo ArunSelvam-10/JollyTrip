@@ -1,0 +1,25 @@
+<div class="background">
+<div class="container">
+    <form [formGroup]="dashboard">
+        <div class="header">
+            <p>Login</p>
+        </div>
+        <div class="mb-3">
+             <label for="username" class="form-label">User Name / email</label>
+            <input type="text" class="form-control" id="username" aria-describedby="userHelp" formControlName="username">
+        </div>
+        <!-- <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
+        </div> -->
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" formControlName="password">
+        </div>
+            <button type="button" class="btn btn-primary" routerLink='/lobby' (click)="dashboardData()">Login</button>
+        <div class="signup">
+            <p>Don't have an account?&nbsp;<span><a href="signup">Signup</a></span></p>
+        </div>
+    </form>
+</div>
+</div>
