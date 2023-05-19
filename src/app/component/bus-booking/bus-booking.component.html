@@ -9,35 +9,35 @@
         <h3>Book Your Trip</h3>
         <p>Bus Booking</p>
 
-        <form action="">
+        <form [formGroup]="BusBooking">
             <div class="form-floating mb-3">
-                <input type="Name" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <input type="Name" class="form-control" id="floatingInput" formControlName="passangerName">
                 <label for="floatingInput">Passanger Name</label>
             </div>
 
             <div class="form-floating mb-3">
-                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                  <option value="1">Male</option>
-                  <option value="2">Female</option>
-                  <option value="3">Transgender</option>
+                <select class="form-select" id="floatingSelect" formControlName="gender" aria-label="Floating label select example">
+                  <option >Male</option>
+                  <option >Female</option>
+                  <option >Transgender</option>
                 </select>
                 <label for="floatingSelect">Gender</label>
               </div>
 
             <div class="form-floating mb-3">
-                <input type="date" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <input type="date" class="form-control" id="floatingInput" formControlName="date">
                 <label for="floatingInput"> Date</label>
             </div>
 
             <div class="col">
                 <div class="form-floating mb-3">
-                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                      <option value="1">TamilNadu</option>
-                      <option value="2">Kerala</option>
-                      <option value="3">Karnataka</option>
-                      <option value="4">Andhra</option>
-                      <option value="5">Maharastra</option>
-                      <option value="6">Goa</option>
+                    <select class="form-select" id="floatingSelect" formControlName="onboard" aria-label="Floating label select example">
+                      <option >TamilNadu</option>
+                      <option >Kerala</option>
+                      <option >Karnataka</option>
+                      <option >Andhra</option>
+                      <option >Maharastra</option>
+                      <option >Goa</option>
                     </select>
                     <label for="floatingSelect">Onboard</label>
                   </div>
@@ -45,20 +45,22 @@
 
             <div class="col">
                 <div class="form-floating mb-3">
-                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                        <option value="1">TamilNadu</option>
-                        <option value="2">Kerala</option>
-                        <option value="3">Karnataka</option>
-                        <option value="4">Andhra</option>
-                        <option value="5">Maharastra</option>
-                        <option value="6">Goa</option>
+                    <select class="form-select" id="floatingSelect" formControlName="drop" aria-label="Floating label select example">
+                        <option >TamilNadu</option>
+                        <option >Kerala</option>
+                        <option >Karnataka</option>
+                        <option >Andhra</option>
+                        <option >Maharastra</option>
+                        <option >Goa</option>
                     </select>
                     <label for="floatingSelect">Drop</label>
                 </div>
             </div>
 
-            <div class="button">
-                <button class="btn btn-info" routerLink="/form3"> Book</button>
+            <div class="button">    
+                <button class="btn btn-info" routerLink="/form">Previous</button>    
+                <button class="btn btn-info" id="save" (click)="saveData()">Save</button>
+                <button class="btn btn-info"  routerLink="/form3" >Next</button>
             </div>
 
         </form>

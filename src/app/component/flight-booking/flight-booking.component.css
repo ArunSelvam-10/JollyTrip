@@ -1,5 +1,5 @@
 .container {
-    padding: 40px 0 12px;
+    padding: 0px 0 12px;
     width: 45%;
     font-weight: 500;
 }
@@ -63,7 +63,7 @@ img:hover{
 
 #save{
     background-color:white;
-    width:180px;
+    width:160px;
 }
 
 #save:hover{

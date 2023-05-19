@@ -3,17 +3,17 @@
     <div class="container">
         <h3>Book Your Trip</h3>
         <p>Hotel Booking</p>
-        <form>
+        <form [formGroup]="HotelBooking">
             <div class="row">
                 <div class="col">
                     <div class="form-floating mb-3">
-                        <input type="date" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <input type="date" class="form-control" id="floatingInput" formControlName="inDate">
                         <label for="floatingInput">Check-in Date </label>
                       </div>
                 </div>
                 <div class="col">
                     <div class="form-floating mb-3">
-                        <input type="date" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <input type="date" class="form-control" id="floatingInput" formControlName="outDate">
                         <label for="floatingInput"> Check-out Date </label>
                       </div>
                 </div>
@@ -21,40 +21,39 @@
             <div class="row">
                 <div class="col">
                     <div class="form-floating mb-3">
-                        <input type="time" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <input type="time" class="form-control" id="floatingInput" formControlName="inTime">
                         <label for="floatingInput"> Check-in Time</label>
                       </div>
                 </div>
                 <div class="col">
                     <div class="form-floating mb-3">
-                        <input type="time" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <input type="time" class="form-control" id="floatingInput" formControlName="outTime">
                         <label for="floatingInput"> Check-out Time</label>
                       </div>
                 </div>
             </div>
-            <div class="form-floating mt-3">
-                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                  <option value="1">Vila</option>
-                  <option value="2">Cottage</option>
-                  <option value="3">Dulex</option>
-                  <option value="4">Regular</option>
+            <div class="form-floating mb-3">
+                <select class="form-select" id="floatingSelect" formControlName="type" aria-label="Floating label select example">
+                  <option >Vila</option>
+                  <option >Cottage</option>
+                  <option >Dulex</option>
+                  <option >Regular</option>
                 </select>
                 <label for="floatingSelect">Type</label>
             </div>
-            <div class="form-floating mt-3">
-                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                  <option value="1">Pure Veg</option>
-                  <option value="2">Non-veg</option>
-                  <option value="3">No food</option>
+            <div class="form-floating mb-3">
+                <select class="form-select" id="floatingSelect" formControlName="food" aria-label="Floating label select example">
+                  <option >Pure Veg</option>
+                  <option >Non-veg</option>
+                  <option >No food</option>
                 </select>
                 <label for="floatingSelect">Food</label>
             </div>
-            <div class="form-floating mt-3">
-                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                  <option value="1">Economy</option>
-                  <option value="2">Premium Economy</option>
-                  <option value="3">Business</option>
-                  <option value="4">First Class</option>
+            <div class="form-floating mb-3">
+                <select class="form-select" id="floatingSelect" formControlName="floorType" aria-label="Floating label select example">
+                  <option >Top Floor</option>
+                  <option >Ground Floor</option>
+                  <option >Any</option>
                 </select>
                 <label for="floatingSelect">Floor preference</label>
                 <span style="font-weight: 100;font-size: small;color: white;">If regular</span>
@@ -63,12 +62,11 @@
                 <input type="checkbox" >&nbsp;
                 <label for="checkbox" style="color: white;"> Coupoun</label>
              </div>  
-             <div class="button">
-                <button class="btn btn-info" routerLink="/form4"> Next</button>
-            </div>
-            <div class="button1">
-                <button class="btn btn-info" routerLink="/form2">Previous</button>
-            </div>      
+             <div class="button">    
+                <button class="btn btn-info" routerLink="/form2">Previous</button>    
+                <button class="btn btn-info" id="save" (click)="saveData()">Save</button>
+                <button class="btn btn-info"  routerLink="/form3" >Next</button>
+            </div>     
         </form>
     </div>
 </body>

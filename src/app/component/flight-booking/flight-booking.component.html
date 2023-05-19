@@ -11,7 +11,7 @@
     <h3>Book Your Trip</h3>
     <p>Flight Booking</p>
  
-    <form  [formGroup]="FlightBooking">
+    <form  [formGroup]="Flight_Booking">
         <div class="row">
             <div class="col">
                 <div class="form-floating mb-3">
@@ -28,7 +28,7 @@
             </div>
             <div class="col">
                 <div class="form-floating mb-3">
-                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                    <select class="form-select" id="floatingSelect" formControlName="arrival" aria-label="Floating label select example">
                         <option value="1">TamilNadu</option>
                         <option value="2">Kerala</option>
                         <option value="3">Karnataka</option>
@@ -42,14 +42,14 @@
         </div>
         <div class="row">
             <div class="col">
-                <div class="form-floating mb-3">
-                    <input type="date" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <div class="form-floating mb-3"> 
+                    <input type="date" class="form-control" id="floatingInput" formControlName="flydate">
                     <label for="floatingInput">Flying Date</label>
                   </div>
             </div>
             <div class="col">
                 <div class="form-floating mb-3">
-                    <input type="time" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <input type="time" class="form-control" id="floatingInput" formControlName="flytime">
                     <label for="floatingInput">Flying Time</label>
                   </div>
             </div>
@@ -57,7 +57,7 @@
         <div class="row">
             <div class="col">
                 <div class="form-floating ">
-                    <input type="number" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <input type="number" class="form-control" id="floatingInput" formControlName="infant">
                     <label for="floatingInput">Infants</label>
                   <span style="color: white;font-weight: 200;font-size:small;">below 2yrs</span>
                 </div>
@@ -65,21 +65,21 @@
             </div>
             <div class="col">
                 <div class="form-floating ">
-                    <input type="number" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <input type="number" class="form-control" id="floatingInput" formControlName="children">
                     <label for="floatingInput">Children</label>
                     <span style="color: white;font-weight: 200;font-size:small;">below 12yrs</span>
                 </div>
             </div>
             <div class="col">
                 <div class="form-floating ">
-                    <input type="number" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <input type="number" class="form-control" id="floatingInput" formControlName="adult">
                     <label for="floatingInput">Adults</label>
                   <span style="color: white;font-weight: 200;font-size:small;">above 12yrs</span>
                 </div>
             </div>
         </div>  
             <div class="form-floating mt-3">
-                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                <select class="form-select" id="floatingSelect" formControlName="class" aria-label="Floating label select example">
                   <option value="1">Economy</option>
                   <option value="2">Premium Economy</option>
                   <option value="3">Business</option>
@@ -89,7 +89,7 @@
             </div>
             
                 <div class="form-floating mt-3 mb-3">
-                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                    <select class="form-select" id="floatingSelect" formControlName="faretype" aria-label="Floating label select example">
                       <option value="1">Student</option>
                       <option value="2">Regular</option>
                       <option value="3">Senior Citizen</option>
@@ -104,9 +104,9 @@
                  </div>
             
                  <div class="button">    
-                    <button class="btn btn-info" routerLink="/lobby">Previous</button>    
-                    <!-- <button class="btn btn-info" id="save" (click)="saveData()">Save</button> -->
-                    <button class="btn btn-info"  routerLink="/form2" >Next</button>
+                    <button class="btn btn-info" routerLink="/form">Previous</button>    
+                    <button class="btn btn-info" id="save" (click)="saveData()">Save</button>
+                    <button class="btn btn-info"  routerLink="/form3" >Next</button>
                 </div>
     </form>
 </div>

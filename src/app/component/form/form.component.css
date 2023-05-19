@@ -1,5 +1,4 @@
 .container {
-    padding: 40px 0 0px;
     width: 45%;
     font-weight: 500;
 }
@@ -49,7 +48,7 @@ p {
 
 #save{
     background-color:white;
-    width:180px;
+    width:160px;
 }
 
 #save:hover{

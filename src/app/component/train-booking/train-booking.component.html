@@ -19,12 +19,12 @@
                 <div class="col">
                     <div class="form-floating mb-3">
                         <select class="form-select" id="floatingSelect" formControlName="departure" aria-label="Floating label select example">
-                          <option value="1">TamilNadu</option>
-                          <option value="2">Kerala</option>
-                          <option value="3">Karnataka</option>
-                          <option value="4">Andhra</option>
-                          <option value="5">Maharastra</option>
-                          <option value="6">Goa</option>
+                          <option >TamilNadu</option>
+                          <option>Kerala</option>
+                          <option >Karnataka</option>
+                          <option >Andhra</option>
+                          <option >Maharastra</option>
+                          <option >Goa</option>
                         </select>
                         <label for="floatingSelect">Departure</label>
                       </div>
@@ -33,12 +33,12 @@
                 <div class="col">
                     <div class="form-floating mb-3">
                         <select class="form-select" id="floatingSelect" formControlName="arrival" aria-label="Floating label select example">
-                            <option value="1">TamilNadu</option>
-                            <option value="2">Kerala</option>
-                            <option value="3">Karnataka</option>
-                            <option value="4">Andhra</option>
-                            <option value="5">Maharastra</option>
-                            <option value="6">Goa</option>
+                            <option >TamilNadu</option>
+                            <option>Kerala</option>
+                            <option >Karnataka</option>
+                            <option >Andhra</option>
+                            <option >Maharastra</option>
+                            <option >Goa</option>
                         </select>
                         <label for="floatingSelect">Arrival</label>
                       </div>
@@ -54,13 +54,13 @@
                 <div class="col">
                     <div class="form-floating mb-3">
                         <select class="form-select" id="floatingInput" formControlName="class">
-                            <option value="1">First Class (1A)</option>
-                            <option value="2">AC 2 Tier (2A)</option>
-                            <option value="3">AC 3 Tier (3A)</option>
-                            <option value="3">AC Chair(CC)</option>
-                            <option value="3">AC 3 Tier (3A)</option>
-                            <option value="4">Sleeper (SL)</option>
-                            <option value="3">Second Sitting (2S)</option>
+                            <option >First Class (1A)</option>
+                            <option >AC 2 Tier (2A)</option>
+                            <option >AC 3 Tier (3A)</option>
+                            <option >AC Chair(CC)</option>
+                            <option >AC 3 Tier (3A)</option>
+                            <option >Sleeper (SL)</option>
+                            <option>Second Sitting (2S)</option>
                         </select>
                         <label for="floatingInput">Class</label>
                     </div>
@@ -69,21 +69,20 @@
 
             <div class="form-floating mb-3">
                 <select class="form-select" id="floatingInput" formControlName="type">
-                    <option value="1">General</option>
-                    <option value="2">Ladies</option>
-                    <option value="3">Senior Citizen</option>
-                    <option value="3">Person With Disabilities</option>
-                    <option value="3">Tatkal</option>
-                    <option value="4">Premium Tatkal</option>
+                    <option >General</option>
+                    <option >Ladies</option>
+                    <option >Senior Citizen</option>
+                    <option >Person With Disabilities</option>
+                    <option >Tatkal</option>
+                    <option >Premium Tatkal</option>
                 </select>
                 <label for="floatingInput">Type</label>
             </div>
 
-            <div class="button">
-                <button class="btn btn-info" routerLink="/form3"> Next</button>
-            </div>
-            <div class="button1">
-                <button class="btn btn-info" type="submit" (click)="saveData()"> Book</button>
+            <div class="button">    
+                <button class="btn btn-info" routerLink="/form">Previous</button>    
+                <button class="btn btn-info" id="save" (click)="saveData()">Save</button>
+                <button class="btn btn-info"  routerLink="/form3" >Next</button>
             </div>
 
 

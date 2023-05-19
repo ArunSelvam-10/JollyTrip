@@ -42,7 +42,8 @@ img:hover{
 }
 
 .button {
-    float: right;
+    display:flex;
+    justify-content:space-around;
 }
 
 .button button {
@@ -60,19 +61,14 @@ img:hover{
 
 }
 
-.button1 button {
-    background-color: rgb(255, 255, 255);
-    border-style: none;
-    font-weight: 500;
-    width: 100px;
-    height: 35px;
-    margin-top: 17px;
+#save{
+    background-color:white;
+    width:160px;
 }
 
-.button1 button:hover {
-    background-color: rgba(32, 85, 146, 0.932);
+#save:hover{
+    background-color:rgb(48, 163, 48);
 }
-
 .checkbox input{
     width: 20px;
     height: 20px;

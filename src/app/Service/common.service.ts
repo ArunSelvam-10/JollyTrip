@@ -10,29 +10,45 @@ export class CommonService {
 
   url:string =  'http://localhost:3000';
 
-//  dashboard 
+//  Dashboard 
   postdata(data:any){
     return this.http.post( this.url + '/Dashboard', data);
   }
 
-  // signup
+  // Signup
   postSignupData(data:any){
     return this.http.post( this.url + '/Signup', data);
     
   }
 
-  //form
+  //Form
   postFormData(data:any){
     return this.http.post( this.url + '/Forms', data);
   }
 
-  //form2 and flight booking
+  //Form2 and Flight booking
   postForm2Data(data:any){
     return this.http.post( this.url + '/Forms2', data);
   }
 
-  //train booking
+
+  //Flight Booking
+  postFlightBooking(data:any){
+    return this.http.post( this.url +'/FlightBooking', data);
+  }
+
+  //Train booking
   postTrainBookingData(data:any){
     return this.http.post( this.url + '/TrainBooking', data);
+  }
+
+  //Bus Booking
+  postBusBookingData(data:any){
+    return this.http.post( this.url + '/BusBooking', data);
+  }
+
+  //Hotel Booking
+  postHotelBookingData(data:any){
+    return this.http.post( this.url + '/HotelBooking', data);
   }
 }
